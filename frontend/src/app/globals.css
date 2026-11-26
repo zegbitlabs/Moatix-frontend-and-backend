@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* Rich True Blue Theme (Vibrant Blue, Not Washout White) */
+  --bg-page: #9DC4F8;
+  --bg-section-alt: #8BB8F5;
+  --bg-navbar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-input: #FFFFFF;
+  --border-card: #60A5FA;
+  --border-input: #94A3B8;
+  --border-subtle: #93C5FD;
+  --primary-btn: #1D4ED8;
+  --primary-btn-hover: #1E40AF;
+  --text-heading: #0A1128;
+  --text-body: #0F172A;
+  --text-muted: #1E293B;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Sinhala", "Noto Sans Tamil", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-heading);
+}
+
+/* Accessible focus ring */
+*:focus-visible {
+  outline: 2px solid #1D4ED8;
+  outline-offset: 2px;
+}

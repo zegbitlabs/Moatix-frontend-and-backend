@@ -1,1 +1,40 @@
-thsi is a gitignore file
+# dependencies
+node_modules/
+frontend/node_modules/
+/.pnp
+.pnp.*
+
+# testing
+/coverage
+
+# next.js
+.next/
+frontend/.next/
+out/
+frontend/out/
+
+# production
+build/
+frontend/build/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+frontend/*.tsbuildinfo
+next-env.d.ts
