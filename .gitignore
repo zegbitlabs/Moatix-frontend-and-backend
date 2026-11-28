@@ -1,1 +1,26 @@
-thsi is a gitignore file
+# Dependencies & Build Outputs
+node_modules/
+.next/
+out/
+dist/
+build/
+target/
+*.tsbuildinfo
+
+# Local Databases & Logs
+data/
+*.mv.db
+*.trace.db
+*.log
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# IDE & OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
