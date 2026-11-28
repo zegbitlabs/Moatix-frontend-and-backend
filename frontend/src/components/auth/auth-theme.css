@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Moatix Check - Official Brand Theme
+   Extracted from Moatix Assessment Portal (Sky Blue & Royal Blue Theme)
+   ========================================================================== */
+
+:root {
+  /* Primary Brand Blues */
+  --mx-bg: #9ec5fe;            /* Soft Sky Blue Background */
+  --mx-bg-light: #b8d5ff;      /* Sky Blue Accent / Gradient */
+  --mx-primary: #1d4ed8;       /* Royal Blue Primary Action (Buttons, Badges) */
+  --mx-primary-hover: #1e40af; /* Darker Royal Blue */
+  --mx-primary-soft: #eff6ff;  /* Ultra Light Blue Surface */
+  --mx-primary-ring: rgba(29, 78, 216, 0.25);
+
+  /* Dark Blue & Text Colors */
+  --mx-text-dark: #0f172a;     /* Deep Slate / Black Heading */
+  --mx-text-blue: #1e3a8a;     /* Deep Navy Blue Accent Text */
+  --mx-text-muted: #334155;    /* Subtitle & Secondary Text */
+  --mx-text-light: #64748b;    /* Placeholder & Small labels */
+
+  /* Surfaces & Lines */
+  --mx-white: #ffffff;
+  --mx-card-bg: #ffffff;
+  --mx-card-border: #cbd5e1;
+  --mx-line: #e2e8f0;
+  --mx-header-card: #f8fafc;
+
+  /* Semantic Alerts */
+  --mx-error: #dc2626;
+  --mx-error-bg: #fef2f2;
+  --mx-success: #16a34a;
+
+  /* Fonts */
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+
+  /* Radii */
+  --mx-radius-sm: 8px;
+  --mx-radius-md: 12px;
+  --mx-radius-lg: 16px;
+  --mx-radius-xl: 20px;
+  --mx-radius-pill: 9999px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--mx-bg);
+  color: var(--mx-text-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Background Atmosphere */
+.mx-page-wrapper {
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 20%, #c4dcfe 0%, #9ec5fe 85%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Navbar (Same as MoatixCheck header) */
+.mx-navbar {
+  width: 100%;
+  height: 72px;
+  background: var(--mx-white);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* Floating Badge (e.g. Moatix Check • Digital Safety for Sri Lanka) */
+.mx-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  background: var(--mx-white);
+  color: var(--mx-text-muted);
+  border-radius: var(--mx-radius-pill);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Main Form Card */
+.mx-card {
+  background: var(--mx-white);
+  border-radius: var(--mx-radius-xl);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  transition: transform 240ms ease;
+}
+
+/* Card Gradient Top Header */
+.mx-card-header {
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--mx-line);
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mx-card-body {
+  padding: 2rem 2.25rem;
+}
+
+@media (max-width: 640px) {
+  .mx-card-body {
+    padding: 1.5rem;
+  }
+}
+
+/* Inputs & Buttons */
+.mx-input {
+  width: 100%;
+  height: 48px;
+  background: var(--mx-white);
+  color: var(--mx-text-dark);
+  font-size: 0.9375rem;
+  border-radius: var(--mx-radius-md);
+  border: 1px solid var(--mx-card-border);
+  outline: none;
+  padding: 0 1rem;
+  font-family: inherit;
+  transition: all 180ms ease;
+}
+
+.mx-input:focus {
+  border-color: var(--mx-primary);
+  box-shadow: 0 0 0 3px var(--mx-primary-ring);
+}
+
+.mx-input.has-error {
+  border-color: var(--mx-error);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+.mx-btn-primary {
+  height: 46px;
+  background: var(--mx-primary);
+  color: var(--mx-white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: var(--mx-radius-md);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.28);
+  transition: all 150ms ease;
+}
+
+.mx-btn-primary:hover {
+  background: var(--mx-primary-hover);
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.36);
+  transform: translateY(-1px);
+}
+
+.mx-btn-primary:active {
+  transform: translateY(1px);
+}
+
+.mx-btn-outline {
+  height: 46px;
+  background: var(--mx-white);
+  color: var(--mx-text-dark);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: var(--mx-radius-md);
+  border: 1px solid var(--mx-card-border);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background 150ms ease;
+}
+
+.mx-btn-outline:hover {
+  background: var(--mx-primary-soft);
+  border-color: #93c5fd;
+}

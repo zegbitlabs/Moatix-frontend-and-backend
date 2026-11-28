@@ -1,0 +1,38 @@
+:root {
+  /* ZegBit Brand Palette */
+  --zb-lime: #B8F52A;
+  --zb-lime-hover: #A6E01F;
+  --zb-lime-soft: #EEFBC4;
+  --zb-lime-ring: rgba(184, 245, 42, 0.45);
+  --zb-lime-glow: rgba(184, 245, 42, 0.15);
+
+  --zb-black: #0B0B0B;
+  --zb-ink-1: #111111;
+  --zb-ink-2: #1A1A1A;
+  --zb-ink-3: #262626;
+
+  --zb-white: #FFFFFF;
+  --zb-paper: #F4F4F2;
+  --zb-line: #E3E3DF;
+  --zb-muted: #6B6B66;
+  --zb-muted-dark: #8E8E88;
+
+  /* Strict Semantic Alerts (Never Lime) */
+  --zb-error-dark: #E5484D;
+  --zb-error-light: #C62828;
+  --zb-warning-dark: #F5A524;
+  --zb-warning-light: #B26A00;
+  --zb-success: #10B981;
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+
+  /* Radii */
+  --zb-radius-xs: 6px;
+  --zb-radius-sm: 8px;
+  --zb-radius-md: 12px;
+  --zb-radius-lg: 16px;
+  --zb-radius-xl: 24px;
+}
